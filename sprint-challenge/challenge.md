@@ -264,11 +264,28 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
 
 Answer both of these questions (baseline ~5 sentences) here in text.
+
+- Code reviews are important for causing convergence in code style and conceptualization. 
+  When individuals discuss and nitpick over the layout and structure of a program, they're
+  determining the best possible shared ideation of that program between them, qualified
+  to whatever their current goals are. Developing shared norms for how programs should look
+  and be structured is useful in enabling developers to interpret and contribute to a broader
+  swath of code. And to that end I tend to pay attention to the semantic interaction between
+  units of code and the physical layout thereof as well.
+
+- Containers provide file system and process space isolation to a specified set of
+  processes such that they can run without interfering with the host system. This
+  allows for consistent and snapshot-able environments allowing developers to operate
+  in the same environment across any machine. Specific to developers, having a consistent
+  developing and/or build environment allows for streamlined development periods without having
+  to reconfigure or resolve dependency issues in the course of using and developing on a given
+  computer
 
 ### Part 8 - Turn it in!
 
