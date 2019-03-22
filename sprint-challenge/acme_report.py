@@ -1,12 +1,12 @@
 import acme, random
 
-def generate_products(n_products=30):
-    adjectives = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
-    nouns = ['Anvil', 'Catapult' 'Disguise' 'Mousetrap', '???']
+ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
+NOUNS = ['Anvil', 'Catapult' 'Disguise' 'Mousetrap', '???']
 
+def generate_products(n_products=30):
     return [
             acme.Product(
-                random.choice(adjectives)+random.choice(nouns), 
+                random.choice(ADJECTIVES)+' '+random.choice(NOUNS),
                 price=random.randint(5, 100), 
                 weight=random.randint(5, 100), 
                 flammability=random.uniform(0.0, 2.5)
