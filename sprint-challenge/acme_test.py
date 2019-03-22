@@ -1,6 +1,7 @@
-import acme, acme_report
 from unittest import mock
+import acme_report
 import unittest
+import acme
 
 class AcmeProductTests(unittest.TestCase):
     def test_default_product_price(self):
