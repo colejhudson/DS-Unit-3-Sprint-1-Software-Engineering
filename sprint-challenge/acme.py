@@ -27,3 +27,18 @@ class Product:
             return "...boom!"
         else:
             return "...BABOOM!"
+
+class BoxingGlove(Product):
+    def __init__(self, *args, weight=10, **kwargs):
+        super().__init__(*args, weight=weight, **kwargs)
+
+    def explode(self):
+        return "...it's a glove."
+
+    def punch(self):
+        if self.weight < 5:
+            return "That tickles." 
+        elif 5 <= self.weight < 15:
+            return "Hey that hurt!"
+        else:
+            return "OUCH!"
